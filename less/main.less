@@ -1,0 +1,244 @@
+// out: ../css/main.css
+// main: main.less
+
+@import "colors";
+@import "fonts";
+@import "misc";
+
+@font-face {
+    font-family: typewriter;
+    src: url(../atwriter.ttf);
+}
+
+html {
+  height: 100%;
+}
+
+body {
+height: 100%;
+background-color: @grey;
+}
+
+/*.wrapper {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: table;
+}*/
+
+.title {
+  font-family: typewriter;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+
+  p {
+    /*background-color: @litegrey;*/
+    border: 3px solid white;
+    display: inline-block;
+    letter-spacing: 0.5em;
+    padding: 20px;
+    border-radius: 15px;
+
+    text-shadow: 2px 1px 3px black;
+    -webkit-text-shadow: 2px 1px 3px black;
+    -moz-text-shadow: 2px 1px 3px black;
+
+    box-shadow: 2px 1px 3px black;
+    -webkit-box-shadow: 2px 1px 3px black;
+    -moz-box-shadow: 2px 1px 3px black;
+  }
+}
+
+.container {
+  margin-top: 20px;
+}
+
+#canvas {
+  height: 600px;
+  width: 600px;
+  margin: 0 auto;
+  background-image: url("../images/canvasbk.gif");
+  box-shadow: 1px 3px 5px;
+  -webkit-box-shadow: 1px 3px 5px;
+  -moz-box-shadow: 1px 3px 5px;
+  overflow: hidden;
+}
+
+.pixel {
+  height: 20px;
+  width: 20px;
+  float: left;
+  background-color: black;
+}
+
+.typewriter {
+  width: 400px;
+  margin: 20px auto;
+}
+
+
+.clear {
+  clear: both;
+  height: 10px;
+}
+
+.footer {
+  width: 100%;
+  height: 150px;
+  bottom: 0;
+  margin-bottom: -150px;
+}
+
+/* Keyboard */
+
+/*.key-wrapper {
+  position: fixed;
+  _position: absolute;
+  bottom:10%;
+  right:3%;
+}*/
+
+.row {text-align: center;}
+
+.key {
+  margin: 3px 1px;
+  padding: 0px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  display: inline-block;
+
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+
+   -webkit-transition: .5s;
+     -moz-transition: .5s;
+       -o-transition: .5s;
+      -ms-transition: .5s;
+          transition: .5s;
+}
+
+.active {
+  border: 2px solid #fd0;
+  color: #fd0;
+
+  -webkit-transition: 0s;
+     -moz-transition: 0s;
+       -o-transition: 0s;
+      -ms-transition: 0s;
+          transition: 0s;
+}
+
+/*Text Colors*/
+
+.rtext {
+  color: @red;
+}
+.ctext {
+  color: @cyan;
+}
+.ytext {
+  color: @yellow;
+}
+.gtext {
+  color: @green;
+}
+
+
+/*Key Classes*/
+
+/*a*/ .k-65 { background-color: @a; }
+
+/*b*/ .k-66 { background-color: @b; }
+
+/*c*/ .k-67 { background-color: @c; }
+
+/*d*/ .k-68 { background-color: @d; }
+
+/*e*/ .k-69 { background-color: @e; }
+
+/*f*/ .k-70 { background-color: @f; }
+
+/*g*/ .k-71 { background-color: @g; }
+
+/*h*/ .k-72 { background-color: @h; }
+
+/*i*/ .k-73 { background-color: @i; }
+
+/*j*/ .k-74 { background-color: @j; }
+
+/*k*/ .k-75 { background-color: @k; }
+
+/*l*/ .k-76 { background-color: @l; }
+
+/*m*/ .k-77 { background-color: @m; }
+
+/*n*/ .k-78 { background-color: @n; }
+
+/*o*/ .k-79 { background-color: @o; }
+
+/*p*/ .k-80 { background-color: @p; }
+
+/*q*/ .k-81 { background-color: @q; }
+
+/*r*/ .k-82 { background-color: @r; }
+
+/*s*/ .k-83 { background-color: @s; }
+
+/*t*/ .k-84 { background-color: @t; }
+
+/*u*/ .k-85 { background-color: @u; }
+
+/*v*/ .k-86 { background-color: @v; }
+
+/*w*/ .k-87 { background-color: @w; }
+
+/*x*/ .k-88 { background-color: @x; }
+
+/*y*/ .k-89 { background-color: @y; }
+
+/*z*/ .k-90 { background-color: @z; }
+
+/*0*/ .k-48 { background-color: @0; }
+
+/*1*/ .k-49 { background-color: @1; }
+
+/*2*/ .k-50 { background-color: @2; }
+
+/*3*/ .k-51 { background-color: @3; }
+
+/*4*/ .k-52 { background-color: @4; }
+
+/*5*/ .k-53 { background-color: @5; }
+
+/*6*/ .k-54 { background-color: @6; }
+
+/*7*/ .k-55 { background-color: @7; }
+
+/*8*/ .k-56 { background-color: @8; }
+
+/*9*/ .k-57 { background-color: @9; }
+
+/*;*/ .k-186 { background-color: @semicolon; }
+
+/*=*/ .k-187 { background-color: @equal; }
+
+/*,*/ .k-188 { background-color: @comma; }
+
+/*-*/ .k-189 { background-color: @hyphen; }
+
+/*.*/ .k-190 { background-color: @period; }
+
+/*/*/ .k-191 { background-color: @slash; }
+
+/*[*/ .k-219 { background-color: @lbracket; }
+
+/*]*/ .k-221 { background-color: @rbracket; }
+
+/*'*/ .k-222 { background-color: @apostrophe; }
+
+/*spacebar*/ .k-32 { background-color: black; background-image: url("../images/sparkle.gif"); background-size: 20px 20px;}

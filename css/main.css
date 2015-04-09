@@ -1,0 +1,307 @@
+@font-face {
+  font-family: typewriter;
+  src: url(../atwriter.ttf);
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background-color: #a2a2a2;
+}
+/*.wrapper {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  display: table;
+}*/
+.title {
+  font-family: typewriter;
+  font-size: 3em;
+  text-align: center;
+  margin-top: 10px;
+  color: white;
+}
+.title p {
+  /*background-color: @litegrey;*/
+  border: 3px solid white;
+  display: inline-block;
+  letter-spacing: 0.5em;
+  padding: 20px;
+  border-radius: 15px;
+  text-shadow: 2px 1px 3px black;
+  -webkit-text-shadow: 2px 1px 3px black;
+  -moz-text-shadow: 2px 1px 3px black;
+  box-shadow: 2px 1px 3px black;
+  -webkit-box-shadow: 2px 1px 3px black;
+  -moz-box-shadow: 2px 1px 3px black;
+}
+.container {
+  margin-top: 20px;
+}
+#canvas {
+  height: 600px;
+  width: 600px;
+  margin: 0 auto;
+  background-image: url("../images/canvasbk.gif");
+  box-shadow: 1px 3px 5px;
+  -webkit-box-shadow: 1px 3px 5px;
+  -moz-box-shadow: 1px 3px 5px;
+  overflow: hidden;
+}
+.pixel {
+  height: 20px;
+  width: 20px;
+  float: left;
+  background-color: black;
+}
+.typewriter {
+  width: 400px;
+  margin: 20px auto;
+}
+.clear {
+  clear: both;
+  height: 10px;
+}
+.footer {
+  width: 100%;
+  height: 150px;
+  bottom: 0;
+  margin-bottom: -150px;
+}
+/* Keyboard */
+/*.key-wrapper {
+  position: fixed;
+  _position: absolute;
+  bottom:10%;
+  right:3%;
+}*/
+.row {
+  text-align: center;
+}
+.key {
+  margin: 3px 1px;
+  padding: 0px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #333;
+  border-radius: 5px;
+  display: inline-block;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -o-transition: .5s;
+  -ms-transition: .5s;
+  transition: .5s;
+}
+.active {
+  border: 2px solid #fd0;
+  color: #fd0;
+  -webkit-transition: 0s;
+  -moz-transition: 0s;
+  -o-transition: 0s;
+  -ms-transition: 0s;
+  transition: 0s;
+}
+/*Text Colors*/
+.rtext {
+  color: #ff0040;
+}
+.ctext {
+  color: #36c0f4;
+}
+.ytext {
+  color: #ffe339;
+}
+.gtext {
+  color: #64e125;
+}
+/*Key Classes*/
+/*a*/
+.k-65 {
+  background-color: #f92222;
+}
+/*b*/
+.k-66 {
+  background-color: #4a7401;
+}
+/*c*/
+.k-67 {
+  background-color: #956a01;
+}
+/*d*/
+.k-68 {
+  background-color: #ffba00;
+}
+/*e*/
+.k-69 {
+  background-color: #ffd164;
+}
+/*f*/
+.k-70 {
+  background-color: #d8d500;
+}
+/*g*/
+.k-71 {
+  background-color: #6ec02b;
+}
+/*h*/
+.k-72 {
+  background-color: #08c747;
+}
+/*i*/
+.k-73 {
+  background-color: #576afa;
+}
+/*j*/
+.k-74 {
+  background-color: #3cc0c2;
+}
+/*k*/
+.k-75 {
+  background-color: #2331e7;
+}
+/*l*/
+.k-76 {
+  background-color: #a200ff;
+}
+/*m*/
+.k-77 {
+  background-color: #006c6b;
+}
+/*n*/
+.k-78 {
+  background-color: #00511e;
+}
+/*o*/
+.k-79 {
+  background-color: #cb75f8;
+}
+/*p*/
+.k-80 {
+  background-color: #fd7bff;
+}
+/*q*/
+.k-81 {
+  background-color: #fc6f6f;
+}
+/*r*/
+.k-82 {
+  background-color: #fdfb41;
+}
+/*s*/
+.k-83 {
+  background-color: #ff7800;
+}
+/*t*/
+.k-84 {
+  background-color: #72ff00;
+}
+/*u*/
+.k-85 {
+  background-color: #46f0f2;
+}
+/*v*/
+.k-86 {
+  background-color: #5e5c26;
+}
+/*w*/
+.k-87 {
+  background-color: #fea353;
+}
+/*x*/
+.k-88 {
+  background-color: #884301;
+}
+/*y*/
+.k-89 {
+  background-color: #4ff87f;
+}
+/*z*/
+.k-90 {
+  background-color: #910101;
+}
+/*0*/
+.k-48 {
+  background-color: #f7c4f9;
+}
+/*1*/
+.k-49 {
+  background-color: #af005b;
+}
+/*2*/
+.k-50 {
+  background-color: #ff007e;
+}
+/*3*/
+.k-51 {
+  background-color: #ff83a9;
+}
+/*4*/
+.k-52 {
+  background-color: #ffc6a4;
+}
+/*5*/
+.k-53 {
+  background-color: #fffbb3;
+}
+/*6*/
+.k-54 {
+  background-color: #bdeba4;
+}
+/*7*/
+.k-55 {
+  background-color: #b5e6e8;
+}
+/*8*/
+.k-56 {
+  background-color: #b9c4e1;
+}
+/*9*/
+.k-57 {
+  background-color: #d4bbe0;
+}
+/*;*/
+.k-186 {
+  background-color: #eb34f2;
+}
+/*=*/
+.k-187 {
+  background-color: #cacaca;
+}
+/*,*/
+.k-188 {
+  background-color: #0b1b6b;
+}
+/*-*/
+.k-189 {
+  background-color: white;
+}
+/*.*/
+.k-190 {
+  background-color: #4d0b70;
+}
+/*/*/
+.k-191 {
+  background-color: #7d097e;
+}
+/*[*/
+.k-219 {
+  background-color: #8a8a8a;
+}
+/*]*/
+.k-221 {
+  background-color: #403f3f;
+}
+/*'*/
+.k-222 {
+  background-color: black;
+}
+/*spacebar*/
+.k-32 {
+  background-color: black;
+  background-image: url("../images/sparkle.gif");
+  background-size: 20px 20px;
+}
